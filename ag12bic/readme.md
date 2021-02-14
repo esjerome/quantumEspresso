@@ -9,5 +9,5 @@
 
 - orbitales: Directorio que contiene los c처digos para el 홯culo de los orbitales moleculares del cluster, por cuestiones de almacenamiento, los resultados fueron borrados del directorio.
 
-- Celda: Directorio que contiene el 
+- relax: Directorio que contiene el calculo para la relajaci처n de los coordenadas at처micas del cluster.
 
