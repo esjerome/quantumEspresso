@@ -1,0 +1,53 @@
+
+     Program DOS v.6.5 starts on 26Feb2021 at  0: 8:54 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      24 processor cores
+     Number of MPI processes:                24
+     Threads/MPI process:                     1
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      24
+
+     Reading xml data from directory:
+
+     ./tmp/bismuto.save/
+     Message from routine  set_nelup_neldw :
+     BEWARE: non-integer number of up and down electrons!
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+               file Bi.pbe-dn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  6P 5D renormalized
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        2660    1051    262               505924   125892   15746
+     Max        2662    1054    264               505932   125906   15760
+     Sum       63857   25265   6317             12142245  3021523  378069
+ 
+     Generating pointlists ...
+     new r_m :   0.4125 (alat units) 17.3250 (a.u.) for type    1
+
+     Gaussian broadening (read from file): ngauss,degauss= -99    0.002000
+
+ 
+     DOS          :     32.11s CPU     34.84s WALL
+
+ 
+   This run was terminated on:   0: 9:28  26Feb2021            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
