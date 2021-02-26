@@ -1,0 +1,6 @@
+&DOS
+    outdir = './tmp' ,
+    prefix = 'plata' ,
+    fildos = 'plata.dos' ,
+    DeltaE = 0.001,
+ /  

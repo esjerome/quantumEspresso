@@ -1,0 +1,31 @@
+
+&CONTROL
+  calculation = 'nscf' ,
+  outdir = './tmp/',
+  pseudo_dir = '../../pseudo' ,
+  prefix = 'bismuto' ,
+  verbosity = 'high' ,
+ /
+ &SYSTEM
+    ibrav = 1 ,
+    celldm(1) = 42 ,
+    nat = 1 ,
+    ntyp = 1 ,
+    ecutwfc = 45 ,
+    ecutrho = 455 ,
+    occupations = 'smearing' ,
+    smearing = 'fd' ,
+    degauss = 0.002,
+    starting_magnetization(1) = 0.7,
+    nspin = 2 ,
+ /
+ &ELECTRONS
+     mixing_beta = 0.7 ,
+     mixing_mode = 'local-TF'
+ /
+ATOMIC_SPECIES
+   Bi   208.98  Bi.pbe-dn-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS (bohr)
+Bi            15.8835644055        15.7699573051        14.3879320795
+ K_POINTS {gamma}
+

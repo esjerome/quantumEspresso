@@ -1,0 +1,6 @@
+&DOS
+    outdir = './tmp' ,
+    prefix = 'ag12Bil' ,
+    fildos = 'ag12Bil.dos' ,
+    DeltaE = 0.001,
+ /  

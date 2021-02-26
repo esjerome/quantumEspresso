@@ -1,0 +1,6 @@
+&DOS
+    outdir = './tmp' ,
+    prefix = 'bismuto' ,
+    fildos = 'bismuto.dos' ,
+    DeltaE = 0.001,
+ /  
