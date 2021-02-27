@@ -1,0 +1,250 @@
+
+     Program PWSCF v.6.5 starts on  9Nov2020 at 13:16:26 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      24 processor cores
+     Number of MPI processes:                24
+     Threads/MPI process:                     1
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      24
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     Atomic positions and unit cell read from directory:
+     ./tmp/ag13.save/                                                                                                                                                                                                                                                
+ 
+
+     gamma-point specific algorithms are used
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     one sub-group per band group will be used
+     scalapack distributed-memory algorithm (size of sub-group:  4*  4 procs)
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1871    1871    466               298404   298404   37314
+     Max        1874    1874    468               298410   298410   37328
+     Sum       44941   44941  11221              7161763  7161763  895731
+ 
+
+
+     bravais-lattice index     =            1
+     lattice parameter (alat)  =      42.0000  a.u.
+     unit-cell volume          =   74088.0000 (a.u.)^3
+     number of atoms/cell      =           13
+     number of atomic types    =            1
+     number of electrons       =       247.00
+     number of Kohn-Sham states=          149
+     kinetic-energy cutoff     =      80.0000  Ry
+     charge density cutoff     =     320.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=  42.000000  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for Ag read from file:
+     ../../pseudo/ag.upf
+     MD5 check sum: 17a31fc8aa445a5d2c0254fdb648b231
+     Pseudo is Norm-conserving + core correction, Zval = 19.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1538 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     atomic species   valence    mass     pseudopotential
+        Ag            19.00   107.87000     Ag( 1.00)
+
+     Starting magnetic structure 
+     atomic species   magnetization
+        Ag           0.700
+
+     No symmetry found
+
+
+                                    s                        frac. trans.
+
+      isym =  1     identity                                     
+
+ cryst.   s( 1) = (     1          0          0      )
+                  (     0          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 1) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+     point group C_1 (1)    
+     there are  1 classes
+     the character table:
+
+       E    
+A      1.00
+
+     the symmetry operations in each class and the name of the first element:
+
+     E        1
+          identity                                               
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Ag  tau(   1) = (   0.2970286   0.2946826   0.3931616  )
+         2           Ag  tau(   2) = (   0.3185366   0.4133267   0.4459609  )
+         3           Ag  tau(   3) = (   0.4996911   0.3479676   0.3549903  )
+         4           Ag  tau(   4) = (   0.4126426   0.3213758   0.4501158  )
+         5           Ag  tau(   5) = (   0.4378311   0.3376041   0.2392344  )
+         6           Ag  tau(   6) = (   0.4593374   0.4562750   0.2920091  )
+         7           Ag  tau(   7) = (   0.3126207   0.3046806   0.2628192  )
+         8           Ag  tau(   8) = (   0.3781851   0.3754772   0.3425801  )
+         9           Ag  tau(   9) = (   0.3473267   0.4966842   0.3482108  )
+        10           Ag  tau(  10) = (   0.4437434   0.4462857   0.4223119  )
+        11           Ag  tau(  11) = (   0.2566866   0.4029574   0.3301761  )
+        12           Ag  tau(  12) = (   0.3437147   0.4295864   0.2350496  )
+        13           Ag  tau(  13) = (   0.4089830   0.2542625   0.3369573  )
+
+   Crystallographic axes
+
+     site n.     atom                  positions (cryst. coord.)
+         1           Ag  tau(   1) = (  0.2970286  0.2946826  0.3931616  )
+         2           Ag  tau(   2) = (  0.3185366  0.4133267  0.4459609  )
+         3           Ag  tau(   3) = (  0.4996911  0.3479676  0.3549903  )
+         4           Ag  tau(   4) = (  0.4126426  0.3213758  0.4501158  )
+         5           Ag  tau(   5) = (  0.4378311  0.3376041  0.2392344  )
+         6           Ag  tau(   6) = (  0.4593374  0.4562750  0.2920091  )
+         7           Ag  tau(   7) = (  0.3126207  0.3046806  0.2628192  )
+         8           Ag  tau(   8) = (  0.3781851  0.3754772  0.3425801  )
+         9           Ag  tau(   9) = (  0.3473267  0.4966842  0.3482108  )
+        10           Ag  tau(  10) = (  0.4437434  0.4462857  0.4223119  )
+        11           Ag  tau(  11) = (  0.2566866  0.4029574  0.3301761  )
+        12           Ag  tau(  12) = (  0.3437147  0.4295864  0.2350496  )
+        13           Ag  tau(  13) = (  0.4089830  0.2542625  0.3369573  )
+
+     number of k points=     1  Fermi-Dirac smearing, width (Ry)=  0.0020
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   1.0000000
+
+                       cryst. coord.
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   1.0000000
+
+     Dense  grid:  3580882 G-vectors     FFT dimensions: ( 240, 240, 240)
+
+     Dynamical RAM for                 wfc:      42.40 MB
+
+     Dynamical RAM for     wfc (w. buffer):      42.40 MB
+
+     Dynamical RAM for           str. fact:       2.28 MB
+
+     Dynamical RAM for           local pot:       0.00 MB
+
+     Dynamical RAM for          nlocal pot:      66.59 MB
+
+     Dynamical RAM for                qrad:       9.58 MB
+
+     Dynamical RAM for          rho,v,vnew:      40.03 MB
+
+     Dynamical RAM for           G-vectors:       9.68 MB
+
+     Dynamical RAM for          h,s,v(r/c):       0.51 MB
+
+     Dynamical RAM for          <psi|beta>:       0.27 MB
+
+     Dynamical RAM for                 psi:     169.61 MB
+
+     Dynamical RAM for                hpsi:     169.61 MB
+
+     Dynamical RAM for      wfcinit/wfcrot:      85.31 MB
+
+     Estimated static dynamical RAM per process >     201.47 MB
+
+     Estimated max dynamical RAM per process >     541.46 MB
+
+     Estimated total dynamical RAM >      12.69 GB
+     Generating pointlists ...
+     new r_m :   0.0516 (alat units)  2.1687 (a.u.) for type    1
+
+     The potential is recalculated from file :
+     ./tmp/ag13.save/charge-density
+
+     Starting wfcs are  130 randomized atomic wfcs +   19 random wfcs
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     Computing kpt #:     1  of     2
+     total cpu time spent up to now is      406.9 secs
+
+     Computing kpt #:     2  of     2
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine davcio (10):
+     error while writing from file "/home/ejrodriguezm/ag13/dos/./tmp/ag13.wfc14"
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine davcio (10):
+     error while writing from file "/home/ejrodriguezm/ag13/dos/./tmp/ag13.wfc4"
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine davcio (10):
+     error while writing from file "/home/ejrodriguezm/ag13/dos/./tmp/ag13.wfc3"
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine davcio (10):
+     error while writing from file "/home/ejrodriguezm/ag13/dos/./tmp/ag13.wfc1"
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine davcio (10):
+     error while writing from file "/home/ejrodriguezm/ag13/dos/./tmp/ag13.wfc2"
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine davcio (10):
+     error while writing from file "/home/ejrodriguezm/ag13/dos/./tmp/ag13.wfc7"
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
