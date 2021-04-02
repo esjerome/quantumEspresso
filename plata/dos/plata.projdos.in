@@ -1,0 +1,7 @@
+&PROJWFC
+    outdir = './tmp',
+    prefix = 'plata',
+    filpdos = 'plata.dos',
+    filproj = 'plata.pdos',
+    DeltaE = 0.001
+ /
