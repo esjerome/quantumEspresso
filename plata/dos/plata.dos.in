@@ -2,5 +2,6 @@
     outdir = './tmp' ,
     prefix = 'plata' ,
     fildos = 'plata.dos' ,
+    Emin = -10,
     DeltaE = 0.001,
  /  
