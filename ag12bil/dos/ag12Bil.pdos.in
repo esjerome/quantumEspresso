@@ -1,0 +1,8 @@
+&PROJWFC
+    outdir = './tmp' ,
+    prefix = 'ag12Bil' ,
+    filpdos = 'ag12Bil.dos' ,
+    filproj = 'ag12Bil.pdos',
+    Emin = -40,
+    DeltaE = 0.001,
+ /
