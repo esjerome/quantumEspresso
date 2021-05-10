@@ -1,0 +1,7 @@
+&PROJWFC
+    outdir = './tmp' ,
+    prefix = 'ag12Bic' ,
+    filpdos = 'ag12Bic.dos' ,
+    filproj = 'ag12Bic.pdos',
+    DeltaE = 0.001
+ /

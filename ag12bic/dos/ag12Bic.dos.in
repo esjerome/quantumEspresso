@@ -1,0 +1,6 @@
+&DOS
+    outdir = './tmp' ,
+    prefix = 'ag12Bic' ,
+    fildos = 'ag12Bic.dos' ,
+    DeltaE = 0.001,
+ /  
