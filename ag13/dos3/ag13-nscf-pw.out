@@ -1,0 +1,356 @@
+
+     Program PWSCF v.6.5 starts on 16Dec2020 at 10:11:53 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      24 processor cores
+     Number of MPI processes:                24
+     Threads/MPI process:                     1
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      24
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     Atomic positions and unit cell read from directory:
+     ./tmp/ag13.save/                                                                                                                                                                                                                                                
+ 
+               file Ag.pbe-dn-kjpaw_psl.0.1.UPF: wavefunction(s)  5S 5P 4D renormalized
+
+     gamma-point specific algorithms are used
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     one sub-group per band group will be used
+     scalapack distributed-memory algorithm (size of sub-group:  4*  4 procs)
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1121     747    186               138682    75476    9438
+     Max        1124     750    188               138694    75484    9452
+     Sum       26933   17961   4493              3328469  1811511  226639
+ 
+
+
+     bravais-lattice index     =            1
+     lattice parameter (alat)  =      42.0000  a.u.
+     unit-cell volume          =   74088.0000 (a.u.)^3
+     number of atoms/cell      =           13
+     number of atomic types    =            1
+     number of electrons       =       143.00
+     number of Kohn-Sham states=           86
+     kinetic-energy cutoff     =      32.0000  Ry
+     charge density cutoff     =     192.0000  Ry
+     Exchange-correlation= SLA PW PBX PBC
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=  42.000000  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for Ag read from file:
+     ../../pseudo/Ag.pbe-dn-kjpaw_psl.0.1.UPF
+     MD5 check sum: 2edc915f30f03476250949c796a6a376
+     Pseudo is Projector augmented-wave + core cor, Zval = 11.0
+     Generated using "atomic" code by A. Dal Corso v.5.0.2 svn rev. 9415
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1237 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Ag            11.00   107.87000     Ag( 1.00)
+
+     Starting magnetic structure 
+     atomic species   magnetization
+        Ag           0.500
+
+     No symmetry found
+
+
+                                    s                        frac. trans.
+
+      isym =  1     identity                                     
+
+ cryst.   s( 1) = (     1          0          0      )
+                  (     0          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 1) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+     point group C_1 (1)    
+     there are  1 classes
+     the character table:
+
+       E    
+A      1.00
+
+     the symmetry operations in each class and the name of the first element:
+
+     E        1
+          identity                                               
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Ag  tau(   1) = (   0.1065524   0.1042065   0.2026854  )
+         2           Ag  tau(   2) = (   0.1280605   0.2228505   0.2554847  )
+         3           Ag  tau(   3) = (   0.3092149   0.1574914   0.1645141  )
+         4           Ag  tau(   4) = (   0.2221664   0.1308996   0.2596396  )
+         5           Ag  tau(   5) = (   0.2473549   0.1471279   0.0487582  )
+         6           Ag  tau(   6) = (   0.2688613   0.2657988   0.1015330  )
+         7           Ag  tau(   7) = (   0.1221445   0.1142044   0.0723430  )
+         8           Ag  tau(   8) = (   0.1877089   0.1850010   0.1521039  )
+         9           Ag  tau(   9) = (   0.1568505   0.3062080   0.1577347  )
+        10           Ag  tau(  10) = (   0.2532672   0.2558095   0.2318357  )
+        11           Ag  tau(  11) = (   0.0662104   0.2124812   0.1396999  )
+        12           Ag  tau(  12) = (   0.1532385   0.2391103   0.0445734  )
+        13           Ag  tau(  13) = (   0.2185068   0.0637863   0.1464811  )
+
+   Crystallographic axes
+
+     site n.     atom                  positions (cryst. coord.)
+         1           Ag  tau(   1) = (  0.1065524  0.1042065  0.2026854  )
+         2           Ag  tau(   2) = (  0.1280605  0.2228505  0.2554847  )
+         3           Ag  tau(   3) = (  0.3092149  0.1574914  0.1645141  )
+         4           Ag  tau(   4) = (  0.2221664  0.1308996  0.2596396  )
+         5           Ag  tau(   5) = (  0.2473549  0.1471279  0.0487582  )
+         6           Ag  tau(   6) = (  0.2688613  0.2657988  0.1015330  )
+         7           Ag  tau(   7) = (  0.1221445  0.1142044  0.0723430  )
+         8           Ag  tau(   8) = (  0.1877089  0.1850010  0.1521039  )
+         9           Ag  tau(   9) = (  0.1568505  0.3062080  0.1577347  )
+        10           Ag  tau(  10) = (  0.2532672  0.2558095  0.2318357  )
+        11           Ag  tau(  11) = (  0.0662104  0.2124812  0.1396999  )
+        12           Ag  tau(  12) = (  0.1532385  0.2391103  0.0445734  )
+        13           Ag  tau(  13) = (  0.2185068  0.0637863  0.1464811  )
+
+     number of k points=     1  Fermi-Dirac smearing, width (Ry)=  0.0020
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   1.0000000
+
+                       cryst. coord.
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   1.0000000
+
+     Dense  grid:  1664235 G-vectors     FFT dimensions: ( 192, 192, 192)
+
+     Smooth grid:   905756 G-vectors     FFT dimensions: ( 160, 160, 160)
+
+     Dynamical RAM for                 wfc:       6.19 MB
+
+     Dynamical RAM for     wfc (w. buffer):       6.19 MB
+
+     Dynamical RAM for           str. fact:       1.06 MB
+
+     Dynamical RAM for           local pot:       0.00 MB
+
+     Dynamical RAM for          nlocal pot:      16.85 MB
+
+     Dynamical RAM for                qrad:       7.42 MB
+
+     Dynamical RAM for          rho,v,vnew:      19.85 MB
+
+     Dynamical RAM for           G-vectors:       4.26 MB
+
+     Dynamical RAM for          h,s,v(r/c):       0.17 MB
+
+     Dynamical RAM for          <psi|beta>:       0.15 MB
+
+     Dynamical RAM for                 psi:      24.76 MB
+
+     Dynamical RAM for                hpsi:      24.76 MB
+
+     Dynamical RAM for                spsi:      24.76 MB
+
+     Dynamical RAM for      wfcinit/wfcrot:      17.16 MB
+
+     Dynamical RAM for           addusdens:     211.62 MB
+
+     Estimated static dynamical RAM per process >      71.24 MB
+
+     Estimated max dynamical RAM per process >     282.86 MB
+
+     Estimated total dynamical RAM >       6.63 GB
+     Generating pointlists ...
+     new r_m :   0.0516 (alat units)  2.1687 (a.u.) for type    1
+
+     The potential is recalculated from file :
+     ./tmp/ag13.save/charge-density
+
+     Starting wfcs are  117 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     Computing kpt #:     1  of     2
+     c_bands:  1 eigenvalues not converged
+     total cpu time spent up to now is      140.2 secs
+
+     Computing kpt #:     2  of     2
+     total cpu time spent up to now is      252.9 secs
+
+     ethr =  6.99E-10,  avg # of iterations =107.5
+
+     total cpu time spent up to now is      252.9 secs
+
+     End of band structure calculation
+
+ ------ SPIN UP ------------
+
+
+          k = 0.0000 0.0000 0.0000 (113320 PWs)   bands (ev):
+
+    -9.9830  -9.5945  -9.5943  -9.5941  -9.5938  -9.5936  -8.6250  -8.6247
+    -8.6246  -8.4811  -8.4808  -8.4805  -8.4801  -8.4407  -8.4405  -8.4404
+    -8.3637  -8.2775  -8.2772  -8.2769  -8.2769  -8.0583  -8.0581  -8.0578
+    -8.0572  -8.0569  -8.0042  -8.0036  -8.0033  -7.7093  -7.7092  -7.7085
+    -7.7080  -7.7076  -7.6431  -7.6429  -7.6424  -7.6418  -7.6411  -7.2540
+    -7.2540  -7.2540  -7.1824  -7.1822  -7.1819  -7.1817  -7.0136  -7.0136
+    -7.0135  -7.0134  -7.0133  -6.9787  -6.9783  -6.9781  -6.9780  -6.8902
+    -6.8901  -6.8900  -6.8591  -6.8588  -6.8588  -6.8586  -6.8584  -6.7238
+    -6.7237  -6.7236  -6.0125  -6.0122  -6.0120  -3.8305  -3.8303  -3.8299
+    -3.8294  -3.8291  -3.1004  -1.7684  -1.7679  -1.7678  -1.3952  -1.3946
+    -1.3941  -1.3935  -1.3478  -1.3476  -1.3474  -0.0104
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   0.9996   0.9996   0.9996
+     0.9996   0.9996   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+
+ ------ SPIN DOWN ----------
+
+
+          k = 0.0000 0.0000 0.0000 (113320 PWs)   bands (ev):
+
+    -9.9207  -9.5077  -9.5075  -9.5073  -9.5070  -9.5068  -8.5355  -8.5352
+    -8.5351  -8.3931  -8.3927  -8.3924  -8.3921  -8.3077  -8.3075  -8.3074
+    -8.1669  -8.1665  -8.1663  -8.1662  -8.1123  -7.9487  -7.9485  -7.9482
+    -7.9476  -7.9473  -7.8606  -7.8601  -7.8598  -7.6153  -7.6152  -7.6146
+    -7.6140  -7.6136  -7.5548  -7.5545  -7.5541  -7.5535  -7.5529  -7.1779
+    -7.1778  -7.1778  -7.0858  -7.0855  -7.0853  -7.0850  -6.9247  -6.9246
+    -6.9245  -6.9244  -6.9243  -6.8874  -6.8871  -6.8869  -6.8868  -6.8069
+    -6.8068  -6.8068  -6.7627  -6.7624  -6.7624  -6.7622  -6.7620  -6.6568
+    -6.6567  -6.6566  -5.7362  -5.7359  -5.7357  -3.4056  -3.4053  -3.4049
+    -3.4044  -3.4041  -2.7667  -1.3595  -1.3591  -1.3589  -1.0427  -1.0425
+    -1.0424  -0.9353  -0.9347  -0.9343  -0.9337   0.0348
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   0.0004   0.0004   0.0004
+     0.0004   0.0004   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+
+     the Fermi energy is    -3.6173 ev
+
+     Writing output data file ./tmp/ag13.save/
+ 
+     init_run     :     11.06s CPU     11.74s WALL (       1 calls)
+     electrons    :    237.03s CPU    239.13s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.01s WALL (       1 calls)
+     wfcinit:atom :      0.07s CPU      0.09s WALL (       2 calls)
+     wfcinit:wfcr :     11.47s CPU     11.59s WALL (       2 calls)
+     potinit      :      4.33s CPU      4.61s WALL (       1 calls)
+     hinit0       :      1.19s CPU      1.24s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :    237.03s CPU    239.12s WALL (       1 calls)
+     v_of_rho     :      2.33s CPU      2.47s WALL (       1 calls)
+     v_h          :      0.19s CPU      0.19s WALL (       1 calls)
+     v_xc         :      2.14s CPU      2.28s WALL (       1 calls)
+     newd         :      2.65s CPU      2.89s WALL (       1 calls)
+     PAW_pot      :      1.27s CPU      1.32s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.07s CPU      0.09s WALL (       2 calls)
+     regterg      :    224.83s CPU    226.71s WALL (      11 calls)
+
+     Called by sum_band:
+
+     Called by *egterg:
+     h_psi        :    180.88s CPU    181.83s WALL (     228 calls)
+     s_psi        :     12.54s CPU     12.58s WALL (     228 calls)
+     g_psi        :      0.42s CPU      0.42s WALL (     215 calls)
+     rdiaghg      :      6.11s CPU      6.57s WALL (     217 calls)
+     regterg:over :     13.45s CPU     13.49s WALL (     215 calls)
+     regterg:upda :     13.30s CPU     13.43s WALL (     215 calls)
+     regterg:last :      5.30s CPU      5.31s WALL (      17 calls)
+     rdiaghg:chol :      0.21s CPU      0.21s WALL (     217 calls)
+     rdiaghg:inve :      0.16s CPU      0.16s WALL (     217 calls)
+     rdiaghg:para :      0.51s CPU      0.52s WALL (     434 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      8.90s CPU      8.93s WALL (     228 calls)
+     vloc_psi     :    157.67s CPU    158.55s WALL (     228 calls)
+     add_vuspsi   :     13.54s CPU     13.58s WALL (     228 calls)
+
+     General routines
+     calbec       :      8.90s CPU      8.93s WALL (     228 calls)
+     fft          :      2.30s CPU      2.37s WALL (      18 calls)
+     ffts         :      0.15s CPU      0.15s WALL (       2 calls)
+     fftw         :    123.58s CPU    124.26s WALL (    4006 calls)
+     interpolate  :      0.49s CPU      0.50s WALL (       2 calls)
+     davcio       :      0.00s CPU      0.06s WALL (       4 calls)
+ 
+     Parallel routines
+     fft_scatt_xy :     23.68s CPU     23.84s WALL (    4026 calls)
+     fft_scatt_yz :     26.35s CPU     26.52s WALL (    4026 calls)
+
+     PAW routines
+     PAW_pot      :      1.27s CPU      1.32s WALL (       1 calls)
+ 
+     PWSCF        :   4m10.23s CPU   4m13.89s WALL
+
+ 
+   This run was terminated on:  10:16: 7  16Dec2020            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

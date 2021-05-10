@@ -1,0 +1,10 @@
+&PROJWFC
+    outdir = './tmp',
+    prefix = 'ag13',
+    filpdos = 'ag13.dos',
+    filproj = 'ag13.pdos',
+    DeltaE=0.0003,
+    pawproj = .true,
+    ngauss = -99,
+    degauss = 0.0007,
+ /
