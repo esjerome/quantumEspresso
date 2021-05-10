@@ -1,0 +1,44 @@
+
+&CONTROL
+  calculation = 'relax' ,
+  outdir = './tmp/',
+  pseudo_dir = '../../pseudo' ,
+  prefix = 'ag13_2' ,
+  verbosity = 'high' ,
+/
+&SYSTEM
+  ibrav = 1 ,
+  celldm(1) = 45 ,
+  nat = 13 ,
+  ntyp = 1 ,
+  ecutwfc = 32,
+  ecutrho = 165,
+  occupations = 'smearing' ,
+  smearing = 'cold' ,
+  degauss = 0.022,
+/
+&ELECTRONS
+  mixing_beta = 0.3 ,
+  mixing_mode = 'local-TF' ,
+  conv_thr = 1.0d-8 ,
+/
+&IONS
+  ion_dynamics = 'bfgs' ,
+/
+ATOMIC_SPECIES
+  Ag   107.87  Ag.pbe-dn-kjpaw_psl.0.1.UPF
+ATOMIC_POSITIONS (bohr)
+Ag       4.551927309   4.452200026   8.465700048
+Ag       5.435273107   9.324402218   10.6318861
+Ag       12.8724065    6.640445846   6.896543098
+Ag       9.297633677   5.548402541   10.80315138
+Ag       10.333111923   6.215853949   2.14454032
+Ag       11.21685221   11.087449946   4.313200362
+Ag       5.190224896   4.863200912   3.113702218
+Ag       7.883619184   7.769938138   6.387936506
+Ag       6.617349005   12.74626168   6.62046112
+Ag       10.57613151    10.677488934   9.662525642
+Ag       2.894570621   8.899193683   5.878788032
+Ag       6.468372998   9.990764746   1.973526131
+Ag       9.148287056   2.793357427   6.158279088
+ K_POINTS {gamma}
