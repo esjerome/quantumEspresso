@@ -1,0 +1,95 @@
+
+     Program POST-PROC v.6.5 starts on 19Jun2020 at  3:54:29 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      24 processor cores
+     Number of MPI processes:                24
+     Threads/MPI process:                     1
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      24
+
+     Reading xml data from directory:
+
+     ./tmp/ag13.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+               file Ag.pbe-dn-kjpaw_psl.0.1.UPF: wavefunction(s)  5S 5P 4D renormalized
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         572     379     94                50556    27511    3434
+     Max         574     382     96                50566    27526    3444
+     Sum       13753    9153   2289              1213469   660429   82519
+ 
+     Generating pointlists ...
+     new r_m :   0.0723 (alat units)  2.1687 (a.u.) for type    1
+
+     Check: negative core charge=   -0.000001
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band = 70
+     Writing data to file  psi2.ag13_K001_B070
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band = 71
+     Writing data to file  psi2.ag13_K001_B071
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band = 72
+     Writing data to file  psi2.ag13_K001_B072
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band = 73
+     Writing data to file  psi2.ag13_K001_B073
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band = 74
+     Writing data to file  psi2.ag13_K001_B074
+     Reading data from file  psi2.ag13_K001_B070
+
+     Writing data to be plotted to file psi2.ag13_K001_B070.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ag13_K001_B071
+
+     Writing data to be plotted to file psi2.ag13_K001_B071.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ag13_K001_B072
+
+     Writing data to be plotted to file psi2.ag13_K001_B072.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ag13_K001_B073
+
+     Writing data to be plotted to file psi2.ag13_K001_B073.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ag13_K001_B074
+
+     Writing data to be plotted to file psi2.ag13_K001_B074.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+ 
+     POST-PROC    :     36.76s CPU     47.79s WALL
+
+ 
+   This run was terminated on:   3:55:16  19Jun2020            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
